@@ -1,0 +1,102 @@
+.icon {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 18px;
+  min-height: 20px;
+  background-color: #8992a9;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+/* SIDEBAR ICON */
+
+.icon.icon-layout {
+  mask-image: url("../icon/LayoutIcon.tsx");
+  -webkit-mask-image: url("../icon/LayoutIcon.tsx");
+}
+.icon.icon-users {
+  mask-image: url("../icon/UserIcon.tsx");
+  -webkit-mask-image: url("../icon/UserIcon.tsx");
+}
+
+.icon.icon-out {
+  mask-image: url("../icon/OutIcon.tsx");
+  -webkit-mask-image: url("../icon/OutIcon.tsx");
+}
+
+/* NAVBAR ICONS */
+
+.icon.icon-msg {
+  mask-image: url("../icon/Msgicon.tsx");
+  -webkit-mask-image: url("../icon/Msgicon.tsx");
+}
+.icon.icon-notify {
+  mask-image: url("../icon/Iconnotify.tsx");
+  -webkit-mask-image: url("../icon/Iconnotify.tsx");
+}
+.icon.icon-full {
+  mask-image: url("../icon/Fullscreenicon.tsx");
+  -webkit-mask-image: url("../icon/Fullscreenicon.tsx");
+}
+.icon.icon-clear {
+  mask-image: url("../icon/Clearicon.tsx");
+  -webkit-mask-image: url("../icon/Clearicon.tsx");
+  width: 16px;
+  height: 16px;
+}
+
+/* LAYOUT ICON */
+
+.icon-icon1 {
+  mask-image: url("../icon/Icon5.tsx");
+  -webkit-mask-image: url("../icon/Icon5.tsx");
+}
+.icon-icon2 {
+  mask-image: url("../icon/Icon2.tsx");
+  -webkit-mask-image: url("../icon/Icon2.tsx");
+}
+.icon-icon3 {
+  mask-image: url("../icon/Icon3.tsx");
+  -webkit-mask-image: url("../icon/Icon3.tsx");
+}
+.icon-icon4 {
+  mask-image: url("../icon/Icon4.tsx");
+  -webkit-mask-image: url("../icon/Icon4.tsx");
+}
+.icon-search {
+  mask-image: url("../icon/SearchIcon.tsx");
+  -webkit-mask-image: url("../icon/SearchIcon.tsx");
+}
+.arrow-up {
+  mask-image: url("../icon/Arrow.tsx");
+  -webkit-mask-image: url("../icon/Arrow.tsx");
+}
+.arrow-down {
+  mask-image: url("../icon/Arrow2.tsx");
+  -webkit-mask-image: url("../icon/Arrow2.tsx");
+}
+.icon-expand {
+  mask-image: url("../icon/Expand.tsx");
+  -webkit-mask-image: url("../icon/Expand.tsx");
+}
+
+.icon .ccc {
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  cursor: pointer;
+  background: #747474;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+
+  mask-image: url("../icon/Vector.tsx");
+  -webkit-mask-image: url("../icon/Vector.tsx");
+}
