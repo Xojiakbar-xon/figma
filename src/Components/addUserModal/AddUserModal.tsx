@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Botton from "./botom/Botton";
 import Input from "./input/Input";
-import Select from "./select/Select";
+// import Select from "./select/Select";
 
 export default function AddUserModal() {
   return (
@@ -10,10 +10,10 @@ export default function AddUserModal() {
         <h1>Add user</h1>
         <Input placeholder="Full name *" />
         <Input placeholder="Phone number *" />
-        <Select />
+        {/* <Select /> */}
         <Input placeholder="Brand" />
         <Input placeholder="Employee count" />
-        <Select />
+        {/* <Select /> */}
         <div className="buton">
           <Botton pe={false} typee="submit">
             Save
