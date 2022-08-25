@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 import "./font.css";
-import "./icon.css";
+
 export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
@@ -15,4 +15,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 15px 18px;
         border-bottom: 1px solid #F4F5F7;
     }
+    .icon {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 18px;
+  min-height: 20px;
+}
 `;

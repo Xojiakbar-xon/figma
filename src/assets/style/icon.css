@@ -13,38 +13,37 @@
 }
 
 /* SIDEBAR ICON */
-
-.icon.icon-layout {
-  mask-image: url("../icon/LayoutIcon.tsx");
-  -webkit-mask-image: url("../icon/LayoutIcon.tsx");
+.icon-layout {
+  mask-image: url("../icon/");
+  -webkit-mask-image: url("../icon/layoutIcon.svg");
 }
-.icon.icon-users {
-  mask-image: url("../icon/UserIcon.tsx");
-  -webkit-mask-image: url("../icon/UserIcon.tsx");
+.icon-users {
+  mask-image: url("../icon/userIcon.svg");
+  -webkit-mask-image: url("../icon//userIcon.svg");
 }
 
-.icon.icon-out {
-  mask-image: url("../icon/OutIcon.tsx");
-  -webkit-mask-image: url("../icon/OutIcon.tsx");
+.icon-out {
+  mask-image: url("../icon/outIcon.svg");
+  -webkit-mask-image: url("../icon//outIcon.svg");
 }
 
 /* NAVBAR ICONS */
 
-.icon.icon-msg {
-  mask-image: url("../icon/Msgicon.tsx");
-  -webkit-mask-image: url("../icon/Msgicon.tsx");
+.icon-msg {
+  mask-image: url("../icon/msgicon.svg");
+  -webkit-mask-image: url("../icon/msgicon.svg");
 }
-.icon.icon-notify {
-  mask-image: url("../icon/Iconnotify.tsx");
-  -webkit-mask-image: url("../icon/Iconnotify.tsx");
+.icon-notify {
+  mask-image: url("../icon/iconnotify.svg");
+  -webkit-mask-image: url("../icon/iconnotify.svg");
 }
-.icon.icon-full {
-  mask-image: url("../icon/Fullscreenicon.tsx");
-  -webkit-mask-image: url("../icon/Fullscreenicon.tsx");
+.icon-full {
+  mask-image: url("../icon/fullscreenicon.svg");
+  -webkit-mask-image: url("../icon/fullscreenicon.svg");
 }
-.icon.icon-clear {
-  mask-image: url("../icon/Clearicon.tsx");
-  -webkit-mask-image: url("../icon/Clearicon.tsx");
+.icon-clear {
+  mask-image: url("../icon/clearicon.svg");
+  -webkit-mask-image: url("../icon/clearicon.svg");
   width: 16px;
   height: 16px;
 }
@@ -52,39 +51,39 @@
 /* LAYOUT ICON */
 
 .icon-icon1 {
-  mask-image: url("../icon/Icon5.tsx");
-  -webkit-mask-image: url("../icon/Icon5.tsx");
+  mask-image: url("../icon/Icon.svg");
+  -webkit-mask-image: url("../icon/Icon.svg");
 }
 .icon-icon2 {
-  mask-image: url("../icon/Icon2.tsx");
-  -webkit-mask-image: url("../icon/Icon2.tsx");
+  mask-image: url("../icon/Icon2.svg");
+  -webkit-mask-image: url("../icon/Icon2.svg");
 }
 .icon-icon3 {
-  mask-image: url("../icon/Icon3.tsx");
-  -webkit-mask-image: url("../icon/Icon3.tsx");
+  mask-image: url("../icon/Icon3.svg");
+  -webkit-mask-image: url("../icon/Icon3.svg");
 }
 .icon-icon4 {
-  mask-image: url("../icon/Icon4.tsx");
-  -webkit-mask-image: url("../icon/Icon4.tsx");
+  mask-image: url("../icon/Icon4.svg");
+  -webkit-mask-image: url("../icon/Icon4.svg");
 }
 .icon-search {
-  mask-image: url("../icon/SearchIcon.tsx");
-  -webkit-mask-image: url("../icon/SearchIcon.tsx");
+  mask-image: url("../icon/search.svg");
+  -webkit-mask-image: url("../icon/search.svg");
 }
 .arrow-up {
-  mask-image: url("../icon/Arrow.tsx");
-  -webkit-mask-image: url("../icon/Arrow.tsx");
+  mask-image: url("../icon/arrow.svg");
+  -webkit-mask-image: url("../icon/arrow.svg");
 }
 .arrow-down {
-  mask-image: url("../icon/Arrow2.tsx");
-  -webkit-mask-image: url("../icon/Arrow2.tsx");
+  mask-image: url("../icon/Arrow2.svg");
+  -webkit-mask-image: url("../icon/Arrow2.svg");
 }
 .icon-expand {
-  mask-image: url("../icon/Expand.tsx");
-  -webkit-mask-image: url("../icon/Expand.tsx");
+  mask-image: url("../icon/Expand.svg");
+  -webkit-mask-image: url("../icon/Expand.svg");
 }
 
-.icon .ccc {
+.icon.ccc {
   display: inline-block;
   width: 12px;
   height: 6px;
@@ -97,6 +96,6 @@
   mask-position: center;
   -webkit-mask-position: center;
 
-  mask-image: url("../icon/Vector.tsx");
-  -webkit-mask-image: url("../icon/Vector.tsx");
+  mask-image: url("../icon/Vector.svg");
+  -webkit-mask-image: url("../icon/Vector.svg");
 }

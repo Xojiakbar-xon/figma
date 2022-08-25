@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { IRes, MyContext } from "../context/Context";
 
@@ -25,6 +25,7 @@ export interface IAuth {
 export default function Router() {
   const isAuth = localStorage.getItem("ISAUTH");
   console.log("AUTH: ", isAuth);
+  const navigate = useNavigate();
 
   if (!isAuth) {
     return (
@@ -39,7 +40,7 @@ export default function Router() {
   return (
     <Routes>
       {/* Admin Panel Route */}
-      <Route path="/" element={<AdminLayout />}>
+      <Route element={<AdminLayout />}>
         <Route path="/users" element={<UsersMain />} />
         <Route path="*" element={<Navigate to="users" />} />
       </Route>

@@ -5,9 +5,9 @@ import styled from "styled-components";
 //@ts-ignore
 import userAvatar from "../../assets/img/userAvatarIcon.png";
 //
-import LayoutIcon from "../../assets/icon/LayoutIcon";
-import OutIcon from "../../assets/icon/OutIcon";
-import UserIcon from "../../assets/icon/UserIcon";
+import LayoutIcon from "../../../assets/icon/LayoutIcon";
+import UserIcon from "../../../assets/icon/UserIcon";
+import OutIcon from "../../../assets/icon/OutIcon";
 
 export default function Sidebar() {
   const location: string = useLocation().pathname;

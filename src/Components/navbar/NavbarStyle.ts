@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarStyle = styled.section`
-width: 100%;
+  width: 100%;
   .navbar {
     display: flex;
     align-items: center;

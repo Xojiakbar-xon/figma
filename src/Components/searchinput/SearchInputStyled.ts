@@ -23,6 +23,10 @@ export const SearchInputStyled = styled.div`
           width: 100%;
           input:onclick {
           }
+
+          &:focus {
+            outline: none;
+          }
         }
 
       }

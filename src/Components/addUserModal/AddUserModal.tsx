@@ -1,21 +1,24 @@
+import { useState, useEffect,useContext} from "react";
 import styled from "styled-components";
 import Botton from "./botom/Botton";
 import Input from "./input/Input";
 import Select from "./select/Select";
 
+
 export default function AddUserModal() {
+  
+
+
   return (
     <Styledapp>
       <form action="">
         <h1>Add user</h1>
         <Input placeholder="Full name *" />
         <Input placeholder="Phone number *" />
-        <Select />
         <Input placeholder="Brand" />
         <Input placeholder="Employee count" />
-        <Select />
         <div className="buton">
-          <Botton pe={false} typee="submit">
+          <Botton pe={false} typee="submit"  >
             Save
           </Botton>
           <Botton typee="submit" pe={true}>
@@ -27,14 +30,15 @@ export default function AddUserModal() {
   );
 }
 const Styledapp = styled.div`
-margin-top: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
   form {
-    position: relative;
-  margin-top: -280px;
     .buton {
       display: flex;
       justify-content: space-between;

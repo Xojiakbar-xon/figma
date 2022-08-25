@@ -1,7 +1,7 @@
 import React from "react";
 import del from "../../assets/icon/DelIcon";
 import pen from "../../assets/icon/Icon2";
-import email from "../../assets/icon/Icon3";
+import email from "../../assets/icon/EmailIcon";
 import icon3 from "../../assets/icon/Icon4";
 import icon4 from "../../assets/icon/Icon5";
 import expand from "../../assets/icon/Expand";
@@ -63,18 +63,7 @@ export function User() {
           </span>
         </div>
       </div>
-      <footer className="card">
-        <div className="expand">
-          <input type="checkbox" />
-          <p>Adison Rhiel Madsen</p>
-        </div>
-        <p>5001929442</p>
-        <p>5001929442</p>
-        <p>5001929442</p>
-        <p>5001929442</p>
-        <p>5001929442</p>
-        <div className="banned">banned</div>
-      </footer>
+      <h1>helllooooooooo</h1>
     </StyledUser>
   );
 }

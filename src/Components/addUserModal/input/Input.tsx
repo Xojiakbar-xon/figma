@@ -10,7 +10,7 @@ export default function Input({ placeholder }: IInput) {
     <StyledInput>
       <div className="div">
         <input type="text" placeholder={placeholder} />
-        <div className="icon "></div>
+        <div className="icon"></div>
       </div>
     </StyledInput>
   );

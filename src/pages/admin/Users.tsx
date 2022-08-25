@@ -1,7 +1,15 @@
+import React from 'react'
+import styled from 'styled-components'
+//
+import Navbar from "../../Components/navbar/Navbar"
 export default function Users() {
   return (
-    <div>
-      <h1 className="text-center mt-5">Users Page</h1>
-    </div>
-  );
+    <StyledUser>
+      Users
+      <Navbar/>
+    </StyledUser>
+  )
 }
+const StyledUser =styled.div`
+  
+`

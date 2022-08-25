@@ -8,7 +8,7 @@ import { IUser, MyContext } from "../../context/Context";
 
 export interface ILogin {
   backfon?: string;
-  userLogin?: (value: IUser) => Promise<void>;
+  userLogin?: any;
   // phoneNumber?: string,
   // password?: string,`
   user?: IUser;
@@ -55,7 +55,11 @@ export default function Login() {
           className="buttonLogin"
           type="submit"
           onClick={() => {
-            userLogin && userLogin(user);
+            setUser({
+              phoneNumber: "",
+              password: "",
+            });
+            userLogin(user);
           }}
         >
           Login
