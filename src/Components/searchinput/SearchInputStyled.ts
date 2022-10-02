@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const SearchInputStyled = styled.div`
+
+width: 100%;
     .input--search {
       display: flex;
-
+      align-items: center;
       padding: 17px;
+      width: 100%;
       border-bottom: 1px solid #F4F5F7;
 
 
@@ -17,16 +20,16 @@ export const SearchInputStyled = styled.div`
         border: 0;
         height: 10px;
         width: 100%;
+        form{
+          
         input {
-          border: none;
+          border:none;
           height: 17px;
           width: 100%;
-          input:onclick {
-          }
-
           &:focus {
             outline: none;
           }
+        }
         }
 
       }

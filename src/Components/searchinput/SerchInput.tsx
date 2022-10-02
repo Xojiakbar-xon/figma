@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Children, ReactNode } from "react";
 
 import { SearchInputStyled } from "./SearchInputStyled";
 
-export default function SearchInput() {
+export default function SearchInput({children}:any) {
   return (
-    <SearchInputStyled>
+    <SearchInputStyled style={{background: "#fff0"}}>
       <section className="input--search">
          <div className="icon icon-search"></div>
          <div className="input">
-          <input type="text" placeholder="Search Name, Date, Number..."/>
+          {children}
         </div>
       </section>
     </SearchInputStyled>

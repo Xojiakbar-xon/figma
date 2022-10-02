@@ -1,28 +1,32 @@
-import React from 'react'
-import { NavbarStyle } from './NavbarStyle'
-import EmailIcon from '../../assets/icon/EmailIcon'
-import MSG from "../../assets/icon/Msgicon"
-import Full from "../../assets/icon/Fullscreenicon"
+import React from "react";
+import { useLocation } from "react-router-dom";
+import { NavbarStyle } from "./NavbarStyle";
 
 export default function Navbar() {
+  const location = useLocation().pathname;
+
   return (
     <NavbarStyle>
-        <section className='navbar'>
-            <div className='text--div'>
-                <h1>Users</h1>
-            </div>
-            <div className='icon--div'>
-                <div className='icon icon-msg'>
-                  <EmailIcon/>
-                </div>
-                <div className='back--icon'>
-                  <MSG/>          
-                </div>
-                <div className='icon icon-full'>
-                  <Full/>
-                </div>
-            </div>
-        </section>
+      <section className="navbar">
+        <div className="text--div">
+          <h1>
+            {location === "/fields"
+              ? "Fields"
+              : location === "/positions"
+              ? "Positions"
+              : location === "/agenda"
+              ? "Agenda"
+              : location === "/comments"
+              ? "Comments"
+              : location === "/tickets"
+              ? "Tickets"
+              : location === "/settings"
+              ? "Settings":
+              location === "/speaker"? "Speaker":
+            "Users"}
+          </h1>
+        </div>
+      </section>
     </NavbarStyle>
-  )
+  );
 }

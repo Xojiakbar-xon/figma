@@ -1,18 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import styled from "styled-components";
 
 // img background
-// @ts-ignore
-import backFon from "./../../assets/img/loginBackground.png";
-import { IUser, MyContext } from "../../context/Context";
-
-export interface ILogin {
-  backfon?: string;
-  userLogin?: any;
-  // phoneNumber?: string,
-  // password?: string,`
-  user?: IUser;
-}
+import backFon from "../../assets/img/loginBackground.png";
+import { ILogin, MyContext } from "../../context/Context";
 
 export default function Login() {
   const { userLogin } = useContext<ILogin>(MyContext);
@@ -21,10 +12,6 @@ export default function Login() {
     phoneNumber: "",
     password: "",
   });
-
-  // useEffect(() => {
-  //   console.log(user);
-  // }, [user]);
 
   return (
     <StyledLogin backfon={backFon}>
@@ -55,11 +42,7 @@ export default function Login() {
           className="buttonLogin"
           type="submit"
           onClick={() => {
-            setUser({
-              phoneNumber: "",
-              password: "",
-            });
-            userLogin(user);
+            userLogin && userLogin(user);
           }}
         >
           Login
@@ -75,6 +58,7 @@ const StyledLogin = styled.div<ILogin>`
   align-items: center;
   justify-content: center;
   position: relative;
+
   .back {
     position: absolute;
     width: 100%;
@@ -108,7 +92,7 @@ const StyledLogin = styled.div<ILogin>`
   input {
     padding: 0 20px;
     margin-bottom: 18px;
-    width: 349px;
+    width: 100% !important;
     height: 48px;
     background: #fdfdfd;
     border: 1px solid rgba(137, 146, 169, 0.2);
@@ -130,8 +114,26 @@ const StyledLogin = styled.div<ILogin>`
     align-self: stretch;
     flex-grow: 0;
     border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
   .buttonLogin {
     color: white;
+  }
+
+  @media (max-width: 455px) {
+    padding: 0 17px;
+
+    .container {
+      width: 100%;
+      padding: 30px 17px;
+
+
+      button {
+        width: 100%;
+      }
+    }
   }
 `;

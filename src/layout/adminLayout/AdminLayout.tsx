@@ -16,7 +16,15 @@ export default function () {
 }
 const StyledLayout = styled.div`
   .layout {
+    padding: 0 18px 0 120px;
     width: 100%;
     background: #f8f8f8;
+  }
+
+  @media (max-width: 560px) {
+    .layout {
+      left: 0px;
+      padding: 0px 20px;
+    }
   }
 `;
