@@ -42,7 +42,7 @@ export default function Router() {
             <Route path="/speaker" element={<Speaker />} />
             <Route path="/comments" element={<Comments />} />
             <Route path="/tickets" element={<Tickets />} />
-            <Route path="*" element={<Navigate to="users" />} />
+            <Route path="*" element={<Navigate to="fields" />} />
           </Route>
         </>
       )}

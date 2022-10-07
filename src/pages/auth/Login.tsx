@@ -3,19 +3,19 @@ import styled from "styled-components";
 
 // img background
 import backFon from "../../assets/img/loginBackground.png";
-import { ILogin, MyContext } from "../../context/Context";
+import { ILogin, MyContext, IUser } from "../../context/Context";
 
 export default function Login() {
   const { userLogin } = useContext<ILogin>(MyContext);
 
-  const [user, setUser] = useState({
+  const [user, setUser] = useState<any>({
     phoneNumber: "",
     password: "",
   });
 
   return (
     <StyledLogin backfon={backFon}>
-      <div className="container">
+      <form className="container" onSubmit={userLogin && (()=>userLogin(user))}>
         <img src={backFon} className="back" />
         <h1>Welcome back!</h1>
         <div className="information">
@@ -24,7 +24,7 @@ export default function Login() {
             type="text"
             value={user.phoneNumber}
             onChange={(e) =>
-              setUser((p) => ({ ...p, phoneNumber: e.target.value }))
+              setUser((p:any) => ({ ...p, phoneNumber: e.target.value }))
             }
           />
         </div>
@@ -34,20 +34,18 @@ export default function Login() {
             type="password"
             value={user.password}
             onChange={(e) =>
-              setUser((p) => ({ ...p, password: e.target.value }))
+              setUser((p:any) => ({ ...p, password: e.target.value }))
             }
           />
         </div>
         <button
           className="buttonLogin"
           type="submit"
-          onClick={() => {
-            userLogin && userLogin(user);
-          }}
+          
         >
           Login
         </button>
-      </div>
+      </form>
     </StyledLogin>
   );
 }
