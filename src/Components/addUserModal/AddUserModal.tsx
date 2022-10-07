@@ -13,10 +13,10 @@ export default function AddUserModal() {
     <Styledapp>
       <form action="">
         <h1>Add user</h1>
-        <Input placeholder="Full name *" />
-        <Input placeholder="Phone number *" />
-        <Input placeholder="Brand" />
-        <Input placeholder="Employee count" />
+        <Input name="gdg" placeholder="Full name *" />
+        <Input name="gdg" placeholder="Phone number *" />
+        <Input name="gdg" placeholder="Brand" />
+        <Input name="gdg" placeholder="Employee count" />
         <div className="buton">
           <Botton pe={false} typee="submit"  >
             Save

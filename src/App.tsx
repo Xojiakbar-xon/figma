@@ -25,3 +25,6 @@ export function App() {
   );
 }
 
+// Jasurbekdan Hello ! 22:10
+
+// "proxy": "http://tgf.kahero.uz/admin-api/",

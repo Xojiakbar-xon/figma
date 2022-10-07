@@ -5,7 +5,7 @@ interface IInput {
   placeholder: string;
   type?: string;
   onChange?: any;
-  name?: string;
+  name: string;
   value?: string | number;
   setName?: React.Dispatch<any>;
   noClear?: boolean;
@@ -44,7 +44,7 @@ export default function Input({
           required={true}
         />
         {noClear ? null : (
-          <div className="icon close" onClick={() => {if(name) clearClicked(name)}}></div>
+          <div className="icon close" onClick={() => clearClicked(name)}></div>
         )}
       </div>
     </StyledInput>

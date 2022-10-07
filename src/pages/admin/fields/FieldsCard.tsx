@@ -17,7 +17,7 @@ import { relative } from "path";
 import { UsersStyled2 } from "../../../Components/usermain/UserStyle2";
 import { TabTitle } from "../../../utils/GeneralFunction";
 function FieldsCard() {
-  TabTitle("Fields");
+  TabTitle("Fields - TGF");
 
   const { getFeild, userField, deleteFeild, loading } =
     useContext<IContext>(MyContext);
