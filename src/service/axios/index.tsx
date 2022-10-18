@@ -9,3 +9,21 @@ export const myAxios = axios.create({
     Authorization: `Bearer ${localStorage.getItem("TOKEN")}`,
   },
 });
+
+myAxios.interceptors.request.use(
+  (config) => {
+    let token = localStorage.getItem("TOKEN");
+    if (token) {
+      config = {
+        ...config,
+        headers: {
+          ...config.headers,
+          Authorization: token,
+        },
+      };
+    }
+
+    return config;
+  },
+  (err) => Promise.reject(err)
+);

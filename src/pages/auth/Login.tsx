@@ -15,7 +15,15 @@ export default function Login() {
 
   return (
     <StyledLogin backfon={backFon}>
-      <form className="container" onSubmit={userLogin && (()=>userLogin(user))}>
+      <form
+        className="container"
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (userLogin) {
+            userLogin(user);
+          }
+        }}
+      >
         <img src={backFon} className="back" />
         <h1>Welcome back!</h1>
         <div className="information">
@@ -24,7 +32,7 @@ export default function Login() {
             type="text"
             value={user.phoneNumber}
             onChange={(e) =>
-              setUser((p:any) => ({ ...p, phoneNumber: e.target.value }))
+              setUser((p: any) => ({ ...p, phoneNumber: e.target.value }))
             }
           />
         </div>
@@ -34,15 +42,11 @@ export default function Login() {
             type="password"
             value={user.password}
             onChange={(e) =>
-              setUser((p:any) => ({ ...p, password: e.target.value }))
+              setUser((p: any) => ({ ...p, password: e.target.value }))
             }
           />
         </div>
-        <button
-          className="buttonLogin"
-          type="submit"
-          
-        >
+        <button className="buttonLogin" type="submit">
           Login
         </button>
       </form>
@@ -127,7 +131,6 @@ const StyledLogin = styled.div<ILogin>`
     .container {
       width: 100%;
       padding: 30px 17px;
-
 
       button {
         width: 100%;

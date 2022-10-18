@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 //
-import "bootstrap/dist/css/bootstrap.cssnpm ";
+import "bootstrap/dist/css/bootstrap.css";
 
 import { ToastContainer } from "react-toastify";
 //
@@ -25,6 +25,6 @@ export function App() {
   );
 }
 
-// Jasurbekdan Hello ! 22:10
+// Xojiakbar-xon Hello ! 22:10
 
 // "proxy": "http://tgf.kahero.uz/admin-api/",
