@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 //
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.cssnpm ";
 
 import { ToastContainer } from "react-toastify";
 //
