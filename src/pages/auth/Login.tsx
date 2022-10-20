@@ -3,27 +3,19 @@ import styled from "styled-components";
 
 // img background
 import backFon from "../../assets/img/loginBackground.png";
-import { ILogin, MyContext, IUser } from "../../context/Context";
+import { ILogin, MyContext } from "../../context/Context";
 
 export default function Login() {
   const { userLogin } = useContext<ILogin>(MyContext);
 
-  const [user, setUser] = useState<any>({
+  const [user, setUser] = useState({
     phoneNumber: "",
     password: "",
   });
 
   return (
     <StyledLogin backfon={backFon}>
-      <form
-        className="container"
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (userLogin) {
-            userLogin(user);
-          }
-        }}
-      >
+      <div className="container">
         <img src={backFon} className="back" />
         <h1>Welcome back!</h1>
         <div className="information">
@@ -32,7 +24,7 @@ export default function Login() {
             type="text"
             value={user.phoneNumber}
             onChange={(e) =>
-              setUser((p: any) => ({ ...p, phoneNumber: e.target.value }))
+              setUser((p) => ({ ...p, phoneNumber: e.target.value }))
             }
           />
         </div>
@@ -42,14 +34,20 @@ export default function Login() {
             type="password"
             value={user.password}
             onChange={(e) =>
-              setUser((p: any) => ({ ...p, password: e.target.value }))
+              setUser((p) => ({ ...p, password: e.target.value }))
             }
           />
         </div>
-        <button className="buttonLogin" type="submit">
+        <button
+          className="buttonLogin"
+          type="submit"
+          onClick={() => {
+            userLogin && userLogin(user);
+          }}
+        >
           Login
         </button>
-      </form>
+      </div>
     </StyledLogin>
   );
 }
@@ -131,6 +129,7 @@ const StyledLogin = styled.div<ILogin>`
     .container {
       width: 100%;
       padding: 30px 17px;
+
 
       button {
         width: 100%;
