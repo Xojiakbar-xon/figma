@@ -94,7 +94,7 @@ export const UsersMain: React.FC = () => {
   }, [checkStore]);
 
   const Filter = users?.data.filter((z: any) =>
-    z.fullName.toLowerCase().includes(velue.toLowerCase())
+    z?.fullName?.toLowerCase().includes(velue.toLowerCase())
   );
   return (
     <UsersStyled>
